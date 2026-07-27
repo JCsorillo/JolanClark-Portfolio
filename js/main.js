@@ -82,7 +82,7 @@ function renderFooter() {
     <li><a href="about.html">About Me</a></li>
     <li><a href="nisu.html">NISU</a></li>
     <li><a href="cics.html">CICS</a></li>
-    <li><a href="https://maps.app.goo.gl/hVyqGk3Yy2pGoA3y8">Google Map</a></li>
+    <li><a href="https://maps.app.goo.gl/dL7Acgz8pCFnC5666">Google Map</a></li>
   </ul>
   <p class="copyright">${getFooterCopyright()}</p>
 </footer>
