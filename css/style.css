@@ -312,12 +312,30 @@ span{
     line-height: 1.75;
 }
 
+/* Remove default opacity: 0 forcing elements to stay invisible if JS doesn't fire */
 .about-card,
 .content-section,
 .scroll-reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: If you want to keep the scroll animation strictly for desktop/larger screens */
+@media screen and (min-width: 901px) {
+    .about-card,
+    .content-section,
+    .scroll-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .about-card.visible,
+    .content-section.visible,
+    .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-card.visible,
